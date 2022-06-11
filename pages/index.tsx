@@ -1,3 +1,5 @@
+import Header from '../components/header'
+import Banner from '../components/banner'
 import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
@@ -21,8 +23,10 @@ const Index = ({ allPosts }: Props) => {
         <Head>
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
+        <Header />
         <Container>
-          <Intro />
+          {/* <Intro /> */}
+          <Banner />
           {heroPost && (
             <HeroPost
               title={heroPost.title}

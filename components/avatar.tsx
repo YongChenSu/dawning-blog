@@ -4,12 +4,12 @@ type Props = {
 }
 
 const Avatar = ({ name, picture }: Props) => {
-  return (
-    <div className="flex items-center">
-      <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
-      <div className="text-xl font-bold">{name}</div>
-    </div>
-  )
-}
+    return (
+        <div className="flex items-center">
+            <img src={picture} className="mr-4 w-12 h-12 rounded-full" alt={name} />
+            <div className="text-xl font-bold">{name}</div>
+        </div>
+    );
+};
 
-export default Avatar
+export default Avatar;
